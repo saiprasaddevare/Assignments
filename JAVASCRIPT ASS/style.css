@@ -1,0 +1,20 @@
+  
+	    .button_id{
+	    	width: 75px;
+	    	height: 75px;
+	    	border-radius: 0px;
+	    	background-color:#CBCBCB;
+	    	color: black;
+
+	    }
+	    #center_layout{
+ 			margin-top: 100px;
+	    }
+	    #button_both{
+	    	width: 130px;
+	    	height: 30px;
+	    }
+	    .tab_bg{
+	    	border: 4px solid #EDEDEE;
+	    	
+	    }
