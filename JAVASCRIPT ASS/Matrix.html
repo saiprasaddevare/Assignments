@@ -3,85 +3,22 @@
 <head>
 	<title>Matrix</title>
 	<link rel="stylesheet" href="style.css">
-	
-	
+	<meta charset="utf-8"/>
 </head>
-<body>
-
-	<div id = "center_layout">
-
-	<form>
-				        <center>
-								<input type="radio" name="color" value = "red" id = "red_id">
-								<label>RED</label>
-
-								
-								<input type="radio" name="color" value = "blue" id = "blue_id">
-								<label>BLUE</label>
-
-								
-		    					<input type="radio" name="color" value = "green" id = "green_id">
-		    					<label>GREEN</label>
-		    		</div>			
-        			
-        		<br><br>
-	  
-				
-
-        			<center>
-							<table class = "tab_bg">
-									<tr>
-					   						<td><input type="button" name="button1" class ="button_id" value = "1" onclick="generic(this)" id = "id1"></td>
-					   						<td><input type="button" name="button2" class ="button_id" value = "2" onclick="generic(this)" id = "id2"></td>
-					   						<td><input type="button" name="button3" class ="button_id" value = "3" onclick="generic(this)" id = "id3"></td>
-									</tr>
-
-									<tr>
-											<td><input type="button" name="button4" class ="button_id" value = "4" onclick="generic(this)" id = "id4"></td>
-											<td><input type="button" name="button5" class ="button_id" value = "5" onclick="generic(this)" id = "id5"></td>
-											<td><input type="button" name="button6" class ="button_id" value = "6" onclick="generic(this)" id = "id6"></td>
-									</tr>
-					
-									<tr>
-											<td><input type="button" name="button7" class ="button_id" value = "7" onclick="generic(this)" id = "id7"></td>
-											<td><input type="button" name="button8" class ="button_id" value = "8" onclick="generic(this)" id = "id8"></td>
-											<td><input type="button" name="button9" class ="button_id" value = "9" onclick="generic(this)" id = "id9"></td>
-									</tr>
-					
-							</table>
-
-					<br><br>
-							<input type="submit" name="reset" value="RESET" id ="button_both">
-							<input type="submit" name="randomize" value="RANDOMIZE" id="button_both" onclick = "random()">
-							<input type = "text" name = "text" value = "txt" id = "textid">
-        </center>
-   </form>			
-</body>
-
- <script type="text/javascript">
-			
-			
-			function generic(e)
-			{
-			   if(e.style.backgroundColor = "")
-			   {
-			   	alert("select color")
-			   }
-			   str = document.querySelector('input[name = "color"]:checked').value
-			   e.style.backgroundColor = str
-			}
-
-			function random()
-			{
-				generic(this)
-				var x = 9;
-				var rand = Math.floor(Math.random()*x) +1;
-				for (var i = 9 - 1; i >= 0; i--) {
-					
-				}
-
-
-			}
-
-	</script>
+		<body onload="initializeButton()">
+			<div class = "center_layout" id = "main_div"></div>
+				<div id = "radio_div">
+     	 		<center>
+     				<input type="radio" name="color" value = "red" id = "red">
+						<label>RED</label>
+						<input type="radio" name="color" value = "blue" id = "blue">
+						<label>BLUE</label>
+						<input type="radio" name="color" value = "green" id = "green">
+		    		<label>GREEN</label><br><br>
+		    		<input type="submit" name="reset" value="RESET" id ="button_one" onclick = "doReset()">
+					  <input type="submit" name="randomize" value="RANDOMIZE" id="button_two" onclick = "doShuffle()">
+					</center>
+				</div>      
+		</body>
+	<script src="Matrix.js"></script>
 </html>
