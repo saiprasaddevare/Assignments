@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Linear Equation</title>
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<script type="text/javascript" src="/home/sai/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="javascript/script.js"></script>
+	</head>
+
+	<body>
+		<form>
+		  <div>
+			 <div class="userdetails">
+			   <div class="structure">
+					<ul class="details">
+						<li>EQUATION:</li>
+						<li><input type="text" name="equationInput" value="" placeholder="ENTER LINEAR EQUATION" id="equationInput"></li>
+						<li>eg : y = mx + c.</li>
+						<li>STEPS:</li>
+						<li><input type="number" name="stepInput" value="" placeholder="ENTER STEPS" id="stepInput"></li>
+						<li>INBOUND:</li>
+						<li><input type="number" name="inBoundInput" placeholder="ENTER INBOUND" id="inBoundInput"></li>
+						<li>OUTBOUND:</li>
+						<li><input type="number" name="outBoundInput" placeholder="ENTER OUTBOUND" id="outBoundInput"></li>
+						<li class="action"><a href="#"><input type="button" name="draw" value="DRAW" class="actiondraw"></a></li>
+						<li class="action"><a href="#"><input type="button" name="reset" value="RESET" class="actionreset"></a></li>
+						<li class="clear"></li>
+					</ul>
+				</div>
+			</div>	
+			<canvas id="coordinate" width="800" height="635">
+				Your browser does not support Canvas 				
+			</canvas>
+		</div>
+    <div class="clear"></div>
+	  </form>
+	</body>
+</html>
